@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charSet="utf-8"/>
+<title>Spotify Downloader - Spotify to MP3 Converter</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Spotify Downloader that let's you download songs, albums, and playlists from spotify in MP3">
+<link rel="icon" href="/favicon.png">
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-861NE1LHJ5"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-861NE1LHJ5');
+</script>
+<script>
+	var media = 'spotify';
+	var music_site = 'open.spotify.com';
+</script>
+<style>
+	:root {
+	  --main-bt-color: white;	
+	  --main-bg1-color: #00a38b;
+	  --main-bg2-color: #02daba;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="style/index.062005.css"/>
+</head>
+<body>
+<div class="nav">
+	<div class="logo">
+		<a href="/"><img src="logo.png" alt="logo" /></a>
+		<h1><a href="/">Spotify Downloader</a></h1>
+	</div>
+	<div class="menu">
+		<a href="https://soundcloudloader.com" title="Soundcloud Downloader">Soundcloud Downloader</a>
+		<a href="https://amazon-music-downloader.com" title="Amazon Music Downloader">Amazon Music Downloader</a>
+	</div>
+</div>	
+<div id="main">
+	<h2>Download and Convert Spotify Muisc to MP3</h2>
+	<div id="search-box">
+		<input id="search-input" type="text" name="url" placeholder="Paste song, album or playlist URL from Spotify">
+		<input id="search-submit" type="submit" value="Start" onclick="return get_mp3()"><div id="loader"></div>
+	</div>
+	<p>Download songs, albums and playlists from Spotify for free</p>
+	<div id="info"></div>
+	<div id="help">
+		<h3 class="help-title">What is Spotify Downloader</h3>
+		<p>Spotifydownloader.app is a cost-free web application that allows you to download Spotify songs online in MP3 format. You can save Spotify songs with album cover in an MP3 file format by using our Spotify Downloader. Our platform provides a fast, secure, and entirely free service without any requirement of installing apps or extensions. You only need a Spotify song, playlist, or album link to paste into the input field on Spotify Downloader website and download MP3 files.</p>
+
+		<h3 class="help-title">How to download songs, albums and playlists on spotify</h3>
+		<p class="help-title">Step 1: Open the Spotify app or the Spotify website in your browser.</p>
+		<img src="/image/step-1.png" width="554" alt="step 1"/>
+		<p class="help-title">Step 2: Open the desired playlist or album and select the song you want to save as an MP3 file.</p>
+		<img src="/image/step-2.png" width="554" alt="step 2"/>
+		<p class="help-title">Step 3: Click on the three dots and then click.</p>
+		<img src="/image/step-3.png" width="554" alt="step 3"/>
+		<p class="help-title">Step 4: Select "Share" > "Copy Song Link."</p>
+		<img src="/image/step-4.png" width="554" alt="step 4"/>
+		<p class="help-title">Step 5: Paste the copied link into the input field, and click "Start" > "Get Download".</p>
+		<img src="/image/step-5.png" width="554" alt="step 5"/>
+		<p class="help-title">Step 6：Click the download MP3 button on the right to download the MP3</p>
+		<img src="/image/step-6.png" width="554" alt="step 6"/>
+			
+		<h3 class="help-title">Features of Spotify Downloader</h3>
+		
+		<p>Spotify Downloader, as a good music downloader, has a clean, intuitive interface that allows users to easily search for and download your favorite songs.</p>
+		<p class="help-title">Stability and Security</p>
+		<p>Spotify downloader is stable and reliable, without crashes or errors. And it is compatible with a wide range of devices and operating systems.</p>
+		<p class="help-title">Download Quickly</p>
+		<p>Spotify Downloader provides fast download speeds so that users can quickly and easily download their favorite songs.</p>
+		<p class="help-title">Free to use</p>
+		<p>We provide you with a simple and efficient way to download your favorite Spotify songs 100% FREE.</p>
+		<p class="help-title">Browser Compatibility</p>
+		<p>You do not need to download any extensions or APPs. The preferred Spotify music can be downloaded online with one click. It supports all personal devices such as phones, computers, and tablets, as well as browsers.</p>
+
+		<h3 class="help-title">FAQs about Spotify Downloader</h3>
+		
+		<p class="help-title">Can I convert Spotify to MP3?</p>
+		<p>Of course. You can convert Spotify to MP3 online using Spotify Downloader.</p>
+
+		<p class="help-title">What website converts Spotify to MP3?</p>
+		<p>spotifydownloader.app is a new release site that can download and convert Spotify music to MP3 freely.</p>
+
+		<p class="help-title">Do I have to pay to download Spotify songs?</p>
+		<p>No. You don’t have to pay for anything. We provide free downloading services for all Spotify songs.</p>
+		
+		<p class="help-title">Can you download Spotify songs without Premium?</p>
+		<p>Of course you can. The Premium plan allows users to download songs and listen to them offline. Our free downloader tool allows you to save any track on your phone in just three clicks. All you need is the link to the Spotify song</p>
+
+		<p class="help-title">How many songs can I download using this free online tool?</p>
+		<p>There is no limit with Spotify Downloader - you can download as many Spotify tracks as you want without any restrictions.</p>
+		
+		<p class="help-title">What can I do to speed up my song downloads?</p>
+		<p>To make your downloads faster, consider using a faster internet connection and pausing other ongoing downloads. Additionally, ensure that you are using the correct format for the Spotify track or playlist link.</p>
+		
+		<p class="help-title">Are there any charges for using this Spotify to MP3 downloader website?</p>
+		<p>No, we are completely free to use. We believe that music should always be accessible to everyone, so it won’t cost you a penny to download the songs you love to play.</p>
+		
+		<p class="help-title">Do I need to download any special software or APK?</p>
+		<p>There is no need to download any software to use our tool. We understand how frustrating it can be when websites force you to download random APKs or redirect you unexpectedly. At Spotify Downloader, we don’t practice that.</p>
+		
+		<p class="help-title">Can I download an entire playlist?</p>
+		<p>Yes, you can now download entire Spotify playlists with our tool!</p>
+	</div>
+</div>
+<footer class="copyright">
+	<div class="footer_link">
+		<a href="/privacy-policy" title="privacy policy">Privacy Policy</a>&nbsp;
+		<a href="/terms-of-use" title="terms of use">Terms of Use</a>
+	</div>
+	<p>This website is not affiliated with or endorsed by Spotify AB. Our use of the name "Spotify" is for context, not claiming any ownership. It remains the property of the copyright holder.</p>
+	<p>spotifydownloader.app doesn't host any copyrighted material. We utilize third party services to accomplish our goals.</p>
+	<p>© 2023 spotifydownloader.app All Rights Reserved</p>
+</footer>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>	
+<script src="script/index.061903.js"></script>
+<body>
+
+</html>
